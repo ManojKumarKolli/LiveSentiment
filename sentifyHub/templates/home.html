@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YouTube Comments</title>
+</head>
+<body>
+    <h1>YouTube Comments</h1>
+    <ul>
+        {% for comment in comments %}
+            <li>{{ comment }}</li>
+        {% empty %}
+            <li>No comments found.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
