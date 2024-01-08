@@ -27,23 +27,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Classification Dashboard</title>
-    <link rel="stylesheet" href="{% static 'static/style.css' %}">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
+    <div class="switch-container">
+        <div class="switch">
+            <input type="checkbox" id="chartToggle" class="switch-checkbox" name="chartToggle">
+            <label class="switch-label" for="chartToggle">
+                <span class="switch-inner"></span>
+                <span class="switch-switch"></span>
+            </label>
+        </div>
     <!-- ... -->
     <div class="comments-section">
         <h2>Comments</h2>
         {% for comment in comments %}
             <div class="comment">
-                <p>{{ comment.text }}</p>
-                <div class="flags">
-                    {% for key, value in comment.flags.items %}
-                        {% if value %}
-                            <span class="flag {{ key }}">{{ key }}</span>
-                        {% endif %}
-                    {% endfor %}
-                </div>
+                <p>{{ comment}}</p>
             </div>
         {% endfor %}
     </div>
@@ -59,6 +60,6 @@
     <script>
         const classificationData = JSON.parse(document.getElementById('classificationData').textContent);
     </script>
-    <script src="{% static 'static/script.js' %}"></script>
+    <script src="{% static 'script.js' %}"></script>
 </body>
 </html>
