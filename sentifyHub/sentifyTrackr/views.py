@@ -13,7 +13,7 @@ import pickle
 
 load_dotenv()
 
-with open('../string_lookup_vocabulary.pkl', 'rb') as file:
+with open('string_lookup_vocabulary.pkl', 'rb') as file:
             loaded_vocab = pickle.load(file)
 # Create your views here.
             
@@ -33,8 +33,6 @@ def home(request):
         textFormat="plainText",
         maxResults=2  
     ).execute()
-    predict("i fucking hate u")
-    predict("i love u")
     comments = []
     for item in response.get('items', []):
         comment = item['snippet']['topLevelComment']['snippet']['textDisplay']
@@ -42,7 +40,7 @@ def home(request):
         comments.append(comment)
 
     # Render in a template
-    return render(request, 'home.html', {'comments': comments})
+    return render(request, 'chart.html', {'comments': comments, "dic": dic})
 
 
 def predict(comment):
@@ -53,9 +51,7 @@ def predict(comment):
         vec=keras.layers.TextVectorization(max_tokens=MAX_FEATURES,
                                 output_sequence_length=1800,
                                 output_mode='int')
-        model = keras.models.load_model('../toxicity.h5')
-        print("*"*10)
-        print("Debug")
+        model = keras.models.load_model('toxicity.h5')
         print(comment)
         vec.adapt(loaded_vocab)
         vectorized_comment = vec([comment])
