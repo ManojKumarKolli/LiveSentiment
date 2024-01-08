@@ -44,7 +44,14 @@
         <h2>Comments</h2>
         {% for comment in comments %}
             <div class="comment">
-                <p>{{ comment}}</p>
+                <p>{{ comment.text }}</p>
+                <div class="flags">
+                    {% for flag, value in comment.flags.items %}
+                        {% if value %}
+                            <span class="flag {{ flag }}">{{ flag }}</span>
+                        {% endif %}
+                    {% endfor %}
+                </div>
             </div>
         {% endfor %}
     </div>
