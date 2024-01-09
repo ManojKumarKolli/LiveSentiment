@@ -11,13 +11,11 @@ let chartInstance; // To keep track of the created chart instance
 // });
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Simulate fetching data
-    const sampleData = {'toxic': 50, 'severe_toxic': 40, 'obscene': 45, 'threat': 34, 'insult': 28, 'identity_hate': 56, 'good': 102};
-    createChart(sampleData);
+    createChart(classificationData);
 
     document.getElementById('chartToggle').addEventListener('change', function() {
         currentChartType = this.checked ? 'pie' : 'bar';
-        createChart(sampleData); // Use sample data to re-render chart
+        createChart(classificationData);
     });
 });
 

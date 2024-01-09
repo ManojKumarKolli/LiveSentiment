@@ -1,3 +1,33 @@
+
+.comment {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .flags {
+    margin-top: 5px;
+  }
+  
+  .flag {
+    display: inline-block;
+    padding: 2px 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    background-color: #eee;
+    color: #333;
+  }
+  
+  .flag.toxic { background-color: #f2dede; }
+  .flag.severe_toxic { background-color: #d9534f; color: white; }
+  .flag.obscene { background-color: #5bc0de; color: white; }
+  .flag.threat { background-color: #f0ad4e; }
+  .flag.insult { background-color: #5cb85c; color: white; }
+  .flag.identity_hate { background-color: #d9edf7; }
+  /* Add more styles for flags as needed */
+  
+  /* Add styles for the switch container and canvas container as previously described */
+  
 body, html {
     height: 100%;
     margin: 0;
