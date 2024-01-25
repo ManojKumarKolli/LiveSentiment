@@ -20,12 +20,12 @@ This project performs real-time sentiment analysis on YouTube comments provided 
    cd LiveSentiment
    ```
 
-2. ***Run Server Using Shell Script:***
+2. **Run Server Using Shell Script:**
    ```bash
-  chmod +x run_project.sh
+  chmod +x run_script.sh
     ```
 
 Execute the script by running:
 ```bash
-  ./run_project.sh
+  ./run_script.sh
 ```
