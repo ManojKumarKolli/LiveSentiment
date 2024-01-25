@@ -21,9 +21,7 @@ This project performs real-time sentiment analysis on YouTube comments provided 
    ```
 
 2. **Run Server Using Shell Script:**
-   ```bash
-  chmod +x run_script.sh
-    ```
+   ``` bash chmod +x run_script.sh```
 
 Execute the script by running:
 ```bash
