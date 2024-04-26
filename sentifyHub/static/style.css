@@ -43,10 +43,15 @@ body, html {
   }
   
   .canvas-container {
-    width: 80%; /* Adjust width as per requirement */
-    max-width: 600px; /* Max width of the chart */
-    margin: 0 auto; /* Centering the chart horizontally */
-  }
+    background: #fff; /* white background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* subtle shadow for depth */
+    border-radius: 8px; /* rounded corners */
+    padding: 20px; /* spacing around the chart */
+    margin-top: 50px; /* space from top of the page */
+    width: 90%; /* relative width */
+    max-width: 1000px; /* maximum width */
+}
+
   
   #classificationChart {
     display: block; /* Removes default canvas inline display */
