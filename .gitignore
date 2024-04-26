@@ -163,3 +163,4 @@ cython_debug/
 # Models
 toxicity.h5
 string_lookup_vocabulary.pkl
+sentifyHub/sentifyTrackr/distilbert_bilstm_model.pth
