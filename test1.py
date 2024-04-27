@@ -1,11 +1,14 @@
 from googleapiclient.discovery import build
 import re
-api_key="AIzaSyDEZyllKXrEnR-58tzzkOE8JNPQg5YiiRk"
+#api_key="AIzaSyDEZyllKXrEnR-58tzzkOE8JNPQg5YiiRk"
 
 from googleapiclient.discovery import build
 from urllib.parse import urlparse, parse_qs
-
+from dotenv import load_dotenv
+import os
 # Set up the YouTube Data API
+load_dotenv()
+api_key = os.getenv('API_KEY')
 youtube = build('youtube', 'v3', developerKey=api_key)
 
 
