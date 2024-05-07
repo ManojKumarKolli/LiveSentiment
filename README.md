@@ -27,15 +27,15 @@ This project performs real-time sentiment analysis on YouTube comments provided 
    git clone https://github.com/ManojKumarKolli/LiveSentiment.git
    cd LiveSentiment
    ```
-2.**Make the shell script executable**
+2. **Make the shell script executable**
    ```bash
    chmod +x run_script.sh
    ```
-3.**Run the shell Scipt**
+3. **Run the shell Scipt**
    ```bash
-   ./run_projects.sh
+   ./run_script.sh
    ```
-4.**Run the Streamlit Application**
+4. **Run the Streamlit Application**
    ```bash
    streamlit run video_metrics_function.py
    ```
