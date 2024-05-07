@@ -9,7 +9,7 @@ This project performs real-time sentiment analysis on YouTube comments provided 
 
 2. **User-Friendly Interface:** The interface is designed with simplicity in mind. Users input the YouTube URL into a designated field, and the system handles the rest. Clear instructions guide users through the process, ensuring a seamless experience for users of all levels of technical proficiency.
 
-3. **Sentiment Classification:** Comments are swiftly categorized into positive, negative, or neutral sentiments. Additionally, the system identifies toxic comments containing abusive language, hate speech, or obscenities, allowing for efficient content moderation.
+3. **Sentiment Classification:** Comments are swiftly categorized into good,toxic,threat,obsence and insult. Additionally, the system identifies toxic comments containing abusive language, hate speech, or obscenities, allowing for efficient content moderation.
 
 4. **Practical Applications:** This tool serves various practical purposes, such as understanding public sentiment towards the video's content, facilitating content moderation by flagging harmful comments, and providing valuable insights for creators and marketers to optimize their strategies.
 
